@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}">
+    <title>Registration</title>
+</head>
+<body>
+    <form class="box" action="/register" method='post'>
+        <header>Please register your information!</header>
+        {% with messages = get_flashed_messages(with_categories=true) %}     <!-- declare a variable called messages -->
+            {% if messages %}                            <!-- check if there are any messages -->
+                {% for catagory, message in messages %}
+                    {% if catagory == 'register' %}     <!-- loop through the messages -->
+                        <p>{{message}}</p>                   <!-- display each message in a paragraph tag -->
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <input type="text" id="name" name="first_name" placeholder="first_name">
+        <input type="text" id="name" name="last_name" placeholder="last_name">
+        <input type="text" id="name" name="email" placeholder="email address">
+        <input type="text" id="name" name="password" placeholder="password">
+        <input type="text" id="name" name="confirm_password" placeholder="confirm password">
+        <button id="btn1">Submit</button>
+    </form>
+    <form class="box2" action="/login" method='post'>
+        <header>Please login!</header>
+        {% with messages = get_flashed_messages(with_categories=true) %}     <!-- declare a variable called messages -->
+            {% if messages %}                            <!-- check if there are any messages -->
+                {% for catagory, message in messages %}
+                    {% if catagory == 'login' %}     <!-- loop through the messages -->
+                        <p>{{message}}</p>                   <!-- display each message in a paragraph tag -->
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <input type="text" id="name" name="email" placeholder="email address">
+        <input type="text" id="name" name="password" placeholder="password">
+        <button id="btn1">Submit</button>
+    </form>     
+        
+</body>
+</html>

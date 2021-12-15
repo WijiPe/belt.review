@@ -1,0 +1,91 @@
+header{
+    margin: 25px 0px 15px 0px;
+    display: flex;
+    font-family: monospace;
+    font-size: 18px;
+    text-shadow: 1px 1px rgb(132, 168, 235);
+}
+
+body{
+    font-family: monospace;
+    display: flex;
+    flex-direction: row;
+}
+
+.box,.box2 {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    font-family: monospace;
+    color: rgb(50, 124, 146);
+    background-color: rgb(34, 39, 66);
+    padding: 0px 10px 50px 50px;
+    border-radius: 12%;
+}
+
+.group, p{
+    margin: 8px 0px 5px 0px;
+    font-family: monospace;
+    color: rgb(146, 140, 140);
+}
+
+.fav{
+    width: 300px;
+    height: 25px;
+    margin: 10px 0px 15px 0px;
+    font-family: monospace;
+    color: rgb(107, 103, 103);
+
+}
+
+.pet{
+    width: 300px;
+    height: 25px;
+    margin: 10px 0px 15px 0px;
+    font-family: monospace;
+    color: rgb(107, 103, 103);
+
+}
+
+#name{
+    margin: 20px 0px 15px 0px;
+    width: 292px;
+    height: 20px;
+    font-family: monospace;
+    color: rgb(107, 103, 103);  
+}
+
+.group{
+    width: 292px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#comment{
+    margin-top: 13px;
+    margin-bottom: 20px;
+    width: 292px;
+    height: 50px;
+    font-size: 20px;
+    font-family: monospace;
+    color: rgb(107, 103, 103);
+}
+
+#comment:focus{
+    background-color: rgb(149, 238, 245);
+}
+
+#btn1{
+    margin-top: 10px;
+    width: 300px;
+    height: 18px;
+    font-family: monospace;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
